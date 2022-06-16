@@ -1,0 +1,50 @@
+
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\title{assignment 8} 
+\author{sumeeth kumar\\ai21btech11008}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+\begin{frame}
+    \titlepage 
+\end{frame}
+\logo{}
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+\section{question}
+\begin{frame}{EX:9.5,question}
+Q)The random variables $ a $ and $b$ are independent $N(0;\sigma)$ and p is the probability that the process $x(t)=a-bt $ crosses the t axis in the intervel(0,T)
+. show that \pi p=$ arc\tan T$.
+\end{frame}
+\section{solution}
+\begin{frame}{solution:}
+   the process crosses the $t$ axis at $x(t)=0$, $a-bt=0$,iff $t=\dfrac{a}{b}$\\
+   setting $\sigma_1=\sigma_2=\sigma$ and $r=0$, in theorm we get,\\[8pt]
+   \bold THEORM:
+   \begin{align}
+       F_z(z)=\frac{1}{2}+\frac{1}{\pi}arc\tan\frac{\sigma_2z- r\sigma_1}{\sigma_1\sqrt{1-r^2}}
+   \end{align}
+   substituting the values we get,\\
+   \begin{align}
+  &{p[0<t<T]=\frac{1}{2}+\frac{1}{\pi}arc\tan\frac{\sigma (T)}{\sigma}-\left(
+  \frac{1}{2}+\frac{1}{\pi}arc\tan0\right)}\\[8pt]
+  &{=\frac{1}{2}+\frac{1}{\pi}arc\tan(T)-\left(
+  \frac{1}{2}+\frac{1}{\pi}arc\tan0\right)}
+  \end{align}
+    \end{frame} 
+    
+    
+    \begin{frame}{solution}
+            \begin{align}
+                &{p=\frac{1}{\pi}arc\tan T}\\[8pt]
+                  &{p\pi=arc\tan T}
+            \end{align}
+             so, hence the  given statement i.e \pi p=$ arc\tan T$ is proved 
+        \end{frame}
+        
+        
+\end{document}
